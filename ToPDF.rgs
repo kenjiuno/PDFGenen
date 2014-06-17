@@ -1,0 +1,39 @@
+HKCR
+{
+	PDFGenen.ToPDF.1 = s 'ToPDF Class'
+	{
+		CLSID = s '{8E325B2C-93E3-40D0-9EE0-8DD2C28F0398}'
+	}
+	PDFGenen.ToPDF = s 'ToPDF Class'
+	{
+		CLSID = s '{8E325B2C-93E3-40D0-9EE0-8DD2C28F0398}'
+		CurVer = s 'PDFGenen.ToPDF.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {8E325B2C-93E3-40D0-9EE0-8DD2C28F0398} = s 'ToPDF Class'
+		{
+			ProgID = s 'PDFGenen.ToPDF.1'
+			VersionIndependentProgID = s 'PDFGenen.ToPDF'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{43FDB2CA-9919-4DEF-BCD7-C37C409D75AB}'
+		}
+	}
+	NoRemove *
+	{
+		NoRemove shellex
+		{
+			NoRemove ContextMenuHandlers
+			{
+				PDFGenen = s '{8E325B2C-93E3-40D0-9EE0-8DD2C28F0398}'
+				{
+					
+				}
+			}
+		}
+	}
+}

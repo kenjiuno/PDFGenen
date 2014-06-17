@@ -172,3 +172,6 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+/Setup_PDFGenen.exe
+/test
+/Setup_PDFGenen_0_1.exe
